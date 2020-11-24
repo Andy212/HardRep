@@ -1,9 +1,35 @@
-let num = 266219;
-const getMultiple = (num) => num.toString().split('').reduce((res, item) => item * res, 1)
-console.log(getMultiple(num));
+let lang = 'ru' && 'en';
+let mas;
 
-let pow = getMultiple(num);
-pow **= 3;
-console.log(pow);
+if (lang == 'ru'){
+    mas = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+    console.log(mas);
+} else if(lang == 'en'){
+    mas = ['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'];
+    console.log(mas);
+}
 
-console.log(String(pow).slice(0,2));
+switch (lang) {
+	case 'ru':
+        mas = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+        console.log(mas); 
+	break;
+	case 'en':
+        mas = ['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'];
+        console.log(mas); 
+	break;
+}
+
+mas = {
+	'ru':['пн', 'вт', 'ср','чт', 'пт', 'сб', 'вс'],
+	'en':['mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn'],
+};
+console.log(mas[lang]);
+
+
+let namePerson;
+
+namePerson = 'Артем' ? 'Директор': 'Студент';
+console.log (namePerson);
+namePerson = 'Максим' ? 'Преподаватель':'Студент';
+console.log (namePerson);           
