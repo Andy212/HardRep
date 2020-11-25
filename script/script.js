@@ -23,7 +23,7 @@ mas = {
 };
 console.log(mas[lang]);
 
-let namePerson;
+let namePerson = 'Артем';
 
 namePerson === 'Артем' ? 'Директор': 
         'Максим' ? 'Преподаватель':
